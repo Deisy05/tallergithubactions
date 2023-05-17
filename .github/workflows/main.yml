@@ -22,3 +22,7 @@ jobs:
 
     - name: Run tests
       run: npm test
+      
+    - name: Test Build docker container
+      run: |
+         docker build -t tallergithubactions .
